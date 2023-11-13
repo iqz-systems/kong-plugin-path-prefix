@@ -1,4 +1,7 @@
 local plugin = require("kong.plugins.base_plugin"):extend()
+local plugin = {
+  PRIORITY = 800
+}
 
 function plugin:new()
     plugin.super.new(self, "path-prefix")
